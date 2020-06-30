@@ -1,0 +1,56 @@
+-------------------------------------------------------------------------------
+Test set: com.vojke.bookstore.dao.OrderDAOTest
+-------------------------------------------------------------------------------
+Tests run: 13, Failures: 13, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+com.vojke.bookstore.dao.OrderDAOTest.testUpdateBookOrderShippingAdrdress()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testUpdateBookOrderShippingAdrdress(OrderDAOTest.java:112)
+
+com.vojke.bookstore.dao.OrderDAOTest.testListAll()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testListAll(OrderDAOTest.java:169)
+
+com.vojke.bookstore.dao.OrderDAOTest.testCount()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testCount(OrderDAOTest.java:180)
+
+com.vojke.bookstore.dao.OrderDAOTest.testGet()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testGet(OrderDAOTest.java:106)
+
+com.vojke.bookstore.dao.OrderDAOTest.testDeleteOrder()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testDeleteOrder(OrderDAOTest.java:161)
+
+com.vojke.bookstore.dao.OrderDAOTest.testListByCustomerNoOrders()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testListByCustomerNoOrders(OrderDAOTest.java:187)
+
+com.vojke.bookstore.dao.OrderDAOTest.testCreateBookOrder()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testCreateBookOrder(OrderDAOTest.java:58)
+
+com.vojke.bookstore.dao.OrderDAOTest.testCreateBookOrder2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testCreateBookOrder2(OrderDAOTest.java:97)
+
+com.vojke.bookstore.dao.OrderDAOTest.testListByCustomerHasSomeOrders()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testListByCustomerHasSomeOrders(OrderDAOTest.java:193)
+
+com.vojke.bookstore.dao.OrderDAOTest.testListMostRecentSales()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testListMostRecentSales(OrderDAOTest.java:215)
+
+com.vojke.bookstore.dao.OrderDAOTest.testGetByIdandCustomerNull()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testGetByIdandCustomerNull(OrderDAOTest.java:201)
+
+com.vojke.bookstore.dao.OrderDAOTest.testUpdateBookOrderDetail()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testUpdateBookOrderDetail(OrderDAOTest.java:125)
+
+com.vojke.bookstore.dao.OrderDAOTest.testGetByIdandCustomer()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.OrderDAOTest.testGetByIdandCustomer(OrderDAOTest.java:209)
+

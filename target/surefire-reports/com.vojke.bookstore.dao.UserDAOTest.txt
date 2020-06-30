@@ -1,0 +1,104 @@
+-------------------------------------------------------------------------------
+Test set: com.vojke.bookstore.dao.UserDAOTest
+-------------------------------------------------------------------------------
+Tests run: 10, Failures: 10, Errors: 0, Skipped: 0, Time elapsed: 0.004 sec <<< FAILURE!
+com.vojke.bookstore.dao.UserDAOTest.testDEletehNonExistUserShouldThrowException()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.delete(JpaDAO.java:56)
+	at com.vojke.bookstore.dao.UserDAO.delete(UserDAO.java:51)
+	at com.vojke.bookstore.dao.UserDAOTest.testDEletehNonExistUserShouldThrowException(UserDAOTest.java:83)
+
+com.vojke.bookstore.dao.UserDAOTest.testCount()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.countWithNamedQuery(JpaDAO.java:73)
+	at com.vojke.bookstore.dao.UserDAO.count(UserDAO.java:61)
+	at com.vojke.bookstore.dao.UserDAOTest.testCount(UserDAOTest.java:93)
+
+com.vojke.bookstore.dao.UserDAOTest.testFindByEmail()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.UserDAO.findbyEmail(UserDAO.java:65)
+	at com.vojke.bookstore.dao.UserDAOTest.testFindByEmail(UserDAOTest.java:99)
+
+com.vojke.bookstore.dao.UserDAOTest.testCreateUsers()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.create(JpaDAO.java:25)
+	at com.vojke.bookstore.dao.UserDAO.create(UserDAO.java:34)
+	at com.vojke.bookstore.dao.UserDAOTest.testCreateUsers(UserDAOTest.java:36)
+
+com.vojke.bookstore.dao.UserDAOTest.testGetUsersById()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.find(JpaDAO.java:46)
+	at com.vojke.bookstore.dao.UserDAO.get(UserDAO.java:46)
+	at com.vojke.bookstore.dao.UserDAOTest.testGetUsersById(UserDAOTest.java:63)
+
+com.vojke.bookstore.dao.UserDAOTest.testDeleteUsers()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.delete(JpaDAO.java:56)
+	at com.vojke.bookstore.dao.UserDAO.delete(UserDAO.java:51)
+	at com.vojke.bookstore.dao.UserDAOTest.testDeleteUsers(UserDAOTest.java:75)
+
+com.vojke.bookstore.dao.UserDAOTest.testFindAllUsers()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQuery(JpaDAO.java:66)
+	at com.vojke.bookstore.dao.UserDAO.listAll(UserDAO.java:56)
+	at com.vojke.bookstore.dao.UserDAOTest.testFindAllUsers(UserDAOTest.java:87)
+
+com.vojke.bookstore.dao.UserDAOTest.testUpdateUserMethod()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.update(JpaDAO.java:37)
+	at com.vojke.bookstore.dao.UserDAO.update(UserDAO.java:40)
+	at com.vojke.bookstore.dao.UserDAOTest.testUpdateUserMethod(UserDAOTest.java:56)
+
+com.vojke.bookstore.dao.UserDAOTest.testGetUsersNotFound()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.find(JpaDAO.java:46)
+	at com.vojke.bookstore.dao.UserDAO.get(UserDAO.java:46)
+	at com.vojke.bookstore.dao.UserDAOTest.testGetUsersNotFound(UserDAOTest.java:69)
+
+com.vojke.bookstore.dao.UserDAOTest.testCreateUsersFieldsNotSet()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.create(JpaDAO.java:25)
+	at com.vojke.bookstore.dao.UserDAO.create(UserDAO.java:34)
+	at com.vojke.bookstore.dao.UserDAOTest.testCreateUsersFieldsNotSet(UserDAOTest.java:46)
+

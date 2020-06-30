@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.205 sec <<< FAILURE!
+com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testGetTotalAmount1()  Time elapsed: 0.202 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testGetTotalAmount1(ShoppingCartTest.java:58)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 19 more
+
+com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testGetTotalquantity()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testGetTotalquantity(ShoppingCartTest.java:53)
+
+com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testGetTotalAmount2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testGetTotalAmount2(ShoppingCartTest.java:62)
+
+com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testRemoveItem()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testRemoveItem(ShoppingCartTest.java:37)
+
+com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testAddItem()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testAddItem(ShoppingCartTest.java:32)
+
+com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testRemoveItem2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testRemoveItem2(ShoppingCartTest.java:44)
+
+com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testClear()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testClear(ShoppingCartTest.java:67)
+
+com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testUpdateCart()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.controller.frontend.shoppingcart.ShoppingCartTest.testUpdateCart(ShoppingCartTest.java:83)
+

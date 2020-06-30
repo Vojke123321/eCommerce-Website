@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.vojke.bookstore.dao.ReviewDAOTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+com.vojke.bookstore.dao.ReviewDAOTest.testFindByCustomerAndBookNotFound()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testFindByCustomerAndBookNotFound(ReviewDAOTest.java:87)
+
+com.vojke.bookstore.dao.ReviewDAOTest.testListAll()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testListAll(ReviewDAOTest.java:65)
+
+com.vojke.bookstore.dao.ReviewDAOTest.testCountReviews()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testCountReviews(ReviewDAOTest.java:73)
+
+com.vojke.bookstore.dao.ReviewDAOTest.testDeleteReview()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testDeleteReview(ReviewDAOTest.java:79)
+
+com.vojke.bookstore.dao.ReviewDAOTest.testUpdateReview()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testUpdateReview(ReviewDAOTest.java:56)
+
+com.vojke.bookstore.dao.ReviewDAOTest.testCreateReview()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testCreateReview(ReviewDAOTest.java:43)
+
+com.vojke.bookstore.dao.ReviewDAOTest.testGetReview()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testGetReview(ReviewDAOTest.java:50)
+
+com.vojke.bookstore.dao.ReviewDAOTest.testListMostRecent()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testListMostRecent(ReviewDAOTest.java:102)
+
+com.vojke.bookstore.dao.ReviewDAOTest.testFindByCustomerAndBookFound()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.ReviewDAOTest.testFindByCustomerAndBookFound(ReviewDAOTest.java:95)
+

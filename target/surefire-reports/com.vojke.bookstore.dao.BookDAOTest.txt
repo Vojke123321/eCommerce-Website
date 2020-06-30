@@ -1,0 +1,203 @@
+-------------------------------------------------------------------------------
+Test set: com.vojke.bookstore.dao.BookDAOTest
+-------------------------------------------------------------------------------
+Tests run: 19, Failures: 19, Errors: 0, Skipped: 0, Time elapsed: 17.293 sec <<< FAILURE!
+com.vojke.bookstore.dao.BookDAOTest.testDeleteBookFail()  Time elapsed: 16.966 sec  <<< FAILURE!
+javax.persistence.EntityNotFoundException: Unable to find com.vojke.bookstore.entity.Book with id 999
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:158)
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:235)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:157)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:259)
+	at org.hibernate.engine.internal.StatefulPersistenceContext.unproxyAndReassociate(StatefulPersistenceContext.java:636)
+	at org.hibernate.event.internal.DefaultDeleteEventListener.onDelete(DefaultDeleteEventListener.java:72)
+	at org.hibernate.event.internal.DefaultDeleteEventListener.onDelete(DefaultDeleteEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.fireDelete(SessionImpl.java:993)
+	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:929)
+	at org.hibernate.internal.SessionImpl.remove(SessionImpl.java:3358)
+	at com.vojke.bookstore.dao.JpaDAO.delete(JpaDAO.java:60)
+	at com.vojke.bookstore.dao.BookDAO.delete(BookDAO.java:35)
+	at com.vojke.bookstore.dao.BookDAOTest.testDeleteBookFail(BookDAOTest.java:101)
+
+com.vojke.bookstore.dao.BookDAOTest.testDeleteBookSuccess()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.delete(JpaDAO.java:56)
+	at com.vojke.bookstore.dao.BookDAO.delete(BookDAO.java:35)
+	at com.vojke.bookstore.dao.BookDAOTest.testDeleteBookSuccess(BookDAOTest.java:106)
+
+com.vojke.bookstore.dao.BookDAOTest.testFindByTitleNotExist()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.findByTitle(BookDAO.java:43)
+	at com.vojke.bookstore.dao.BookDAOTest.testFindByTitleNotExist(BookDAOTest.java:130)
+
+com.vojke.bookstore.dao.BookDAOTest.testFindByTitleExist()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.findByTitle(BookDAO.java:43)
+	at com.vojke.bookstore.dao.BookDAOTest.testFindByTitleExist(BookDAOTest.java:137)
+
+com.vojke.bookstore.dao.BookDAOTest.testGetBookSuccess()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.find(JpaDAO.java:46)
+	at com.vojke.bookstore.dao.BookDAO.get(BookDAO.java:30)
+	at com.vojke.bookstore.dao.BookDAOTest.testGetBookSuccess(BookDAOTest.java:119)
+
+com.vojke.bookstore.dao.BookDAOTest.testCreateSecoundBook()  Time elapsed: 0.312 sec  <<< FAILURE!
+java.nio.file.NoSuchFileException: D:\books\Java 8 in Action.jpg
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.readAllBytes(Unknown Source)
+	at com.vojke.bookstore.dao.BookDAOTest.testCreateSecoundBook(BookDAOTest.java:66)
+
+com.vojke.bookstore.dao.BookDAOTest.testSearchBookByTitle()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.search(BookDAO.java:57)
+	at com.vojke.bookstore.dao.BookDAOTest.testSearchBookByTitle(BookDAOTest.java:162)
+
+com.vojke.bookstore.dao.BookDAOTest.testListBestSelilingBooks()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQuery(JpaDAO.java:99)
+	at com.vojke.bookstore.dao.BookDAO.listBestSelilingBooks(BookDAO.java:70)
+	at com.vojke.bookstore.dao.BookDAOTest.testListBestSelilingBooks(BookDAOTest.java:195)
+
+com.vojke.bookstore.dao.BookDAOTest.testListByCategory()  Time elapsed: 0.004 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.listBycategory(BookDAO.java:50)
+	at com.vojke.bookstore.dao.BookDAOTest.testListByCategory(BookDAOTest.java:150)
+
+com.vojke.bookstore.dao.BookDAOTest.testSearchBookByAuthor()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.search(BookDAO.java:57)
+	at com.vojke.bookstore.dao.BookDAOTest.testSearchBookByAuthor(BookDAOTest.java:169)
+
+com.vojke.bookstore.dao.BookDAOTest.testSearchBookByDescription()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.search(BookDAO.java:57)
+	at com.vojke.bookstore.dao.BookDAOTest.testSearchBookByDescription(BookDAOTest.java:179)
+
+com.vojke.bookstore.dao.BookDAOTest.testCountByCategory()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.countWithNamedQuery(JpaDAO.java:119)
+	at com.vojke.bookstore.dao.BookDAO.countByCategory(BookDAO.java:66)
+	at com.vojke.bookstore.dao.BookDAOTest.testCountByCategory(BookDAOTest.java:189)
+
+com.vojke.bookstore.dao.BookDAOTest.testListMostFavoredBooks()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryObjects(JpaDAO.java:108)
+	at com.vojke.bookstore.dao.BookDAO.listMostFavoredBooks(BookDAO.java:75)
+	at com.vojke.bookstore.dao.BookDAOTest.testListMostFavoredBooks(BookDAOTest.java:203)
+
+com.vojke.bookstore.dao.BookDAOTest.testCreateBook()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.nio.file.NoSuchFileException: D:\books\Effective Java.jpg
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.readAllBytes(Unknown Source)
+	at com.vojke.bookstore.dao.BookDAOTest.testCreateBook(BookDAOTest.java:45)
+
+com.vojke.bookstore.dao.BookDAOTest.testListAll()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQuery(JpaDAO.java:66)
+	at com.vojke.bookstore.dao.BookDAO.listAll(BookDAO.java:40)
+	at com.vojke.bookstore.dao.BookDAOTest.testListAll(BookDAOTest.java:124)
+
+com.vojke.bookstore.dao.BookDAOTest.testUpdateBook()  Time elapsed: 0.003 sec  <<< FAILURE!
+java.nio.file.NoSuchFileException: D:\books\Effective Java.jpg
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.readAllBytes(Unknown Source)
+	at com.vojke.bookstore.dao.BookDAOTest.testUpdateBook(BookDAOTest.java:89)
+
+com.vojke.bookstore.dao.BookDAOTest.testListNewBooks()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQuery(JpaDAO.java:99)
+	at com.vojke.bookstore.dao.BookDAO.listnewBooks(BookDAO.java:54)
+	at com.vojke.bookstore.dao.BookDAOTest.testListNewBooks(BookDAOTest.java:155)
+
+com.vojke.bookstore.dao.BookDAOTest.testCount()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.countWithNamedQuery(JpaDAO.java:73)
+	at com.vojke.bookstore.dao.BookDAO.count(BookDAO.java:63)
+	at com.vojke.bookstore.dao.BookDAOTest.testCount(BookDAOTest.java:143)
+
+com.vojke.bookstore.dao.BookDAOTest.testGetBookFail()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.find(JpaDAO.java:46)
+	at com.vojke.bookstore.dao.BookDAO.get(BookDAO.java:30)
+	at com.vojke.bookstore.dao.BookDAOTest.testGetBookFail(BookDAOTest.java:112)
+

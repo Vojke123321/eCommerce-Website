@@ -1,0 +1,84 @@
+-------------------------------------------------------------------------------
+Test set: com.vojke.bookstore.dao.CaregoryDAOTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.001 sec <<< FAILURE!
+com.vojke.bookstore.dao.CaregoryDAOTest.testCreateCategory()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.create(JpaDAO.java:25)
+	at com.vojke.bookstore.dao.CategoryDAO.create(CategoryDAO.java:17)
+	at com.vojke.bookstore.dao.CaregoryDAOTest.testCreateCategory(CaregoryDAOTest.java:32)
+
+com.vojke.bookstore.dao.CaregoryDAOTest.testFindByNameNotFound()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.CategoryDAO.findByName(CategoryDAO.java:47)
+	at com.vojke.bookstore.dao.CaregoryDAOTest.testFindByNameNotFound(CaregoryDAOTest.java:81)
+
+com.vojke.bookstore.dao.CaregoryDAOTest.testUpdateCategory()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.update(JpaDAO.java:37)
+	at com.vojke.bookstore.dao.CategoryDAO.update(CategoryDAO.java:22)
+	at com.vojke.bookstore.dao.CaregoryDAOTest.testUpdateCategory(CaregoryDAOTest.java:40)
+
+com.vojke.bookstore.dao.CaregoryDAOTest.testDeleteCategoryt()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.delete(JpaDAO.java:56)
+	at com.vojke.bookstore.dao.CategoryDAO.delete(CategoryDAO.java:32)
+	at com.vojke.bookstore.dao.CaregoryDAOTest.testDeleteCategoryt(CaregoryDAOTest.java:56)
+
+com.vojke.bookstore.dao.CaregoryDAOTest.testListAll()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQuery(JpaDAO.java:66)
+	at com.vojke.bookstore.dao.CategoryDAO.listAll(CategoryDAO.java:38)
+	at com.vojke.bookstore.dao.CaregoryDAOTest.testListAll(CaregoryDAOTest.java:64)
+
+com.vojke.bookstore.dao.CaregoryDAOTest.testCount()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.countWithNamedQuery(JpaDAO.java:73)
+	at com.vojke.bookstore.dao.CategoryDAO.count(CategoryDAO.java:43)
+	at com.vojke.bookstore.dao.CaregoryDAOTest.testCount(CaregoryDAOTest.java:70)
+
+com.vojke.bookstore.dao.CaregoryDAOTest.testGet()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.find(JpaDAO.java:46)
+	at com.vojke.bookstore.dao.CategoryDAO.get(CategoryDAO.java:27)
+	at com.vojke.bookstore.dao.CaregoryDAOTest.testGet(CaregoryDAOTest.java:49)
+
+com.vojke.bookstore.dao.CaregoryDAOTest.testFindByName()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.CategoryDAO.findByName(CategoryDAO.java:47)
+	at com.vojke.bookstore.dao.CaregoryDAOTest.testFindByName(CaregoryDAOTest.java:76)
+

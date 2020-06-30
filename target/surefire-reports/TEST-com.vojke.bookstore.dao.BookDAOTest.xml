@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="19" failures="19" name="com.vojke.bookstore.dao.BookDAOTest" time="17.29" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_231\bin"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\ecplise_file\BookStore2"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\ecplise_file\BookStore2"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_231\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\pc\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\ecplise_file\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8747796539600274668.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_231/bin/server;C:/Program Files/Java/jre1.8.0_231/bin;C:/Program Files/Java/jre1.8.0_231/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\Java\jre1.8.0_201\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\wildfly-19.0.0.Final\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\pc\AppData\Local\Microsoft\WindowsApps;D:\CHROME DOWN\apache-maven-3.6.3\bin;C:\Users\pc\AppData\Roaming\npm;C:\Users\pc\Desktop;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\pc"/>
+    <property name="user.timezone" value="Europe/Prague"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="pc"/>
+    <property name="java.class.path" value="C:\Users\pc\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.15.0.20200310-1832\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_231"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_231\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_231\lib\resources.jar;C:\Program Files\Java\jre1.8.0_231\lib\rt.jar;C:\Program Files\Java\jre1.8.0_231\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_231\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_231\lib\jce.jar;C:\Program Files\Java\jre1.8.0_231\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_231\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_231\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\ecplise_file\BookStore2\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testDeleteBookFail" time="16.966">
+    <failure message="Unable to find com.vojke.bookstore.entity.Book with id 999" type="javax.persistence.EntityNotFoundException">javax.persistence.EntityNotFoundException: Unable to find com.vojke.bookstore.entity.Book with id 999
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl$JpaEntityNotFoundDelegate.handleEntityNotFound(EntityManagerFactoryBuilderImpl.java:158)
+	at org.hibernate.proxy.AbstractLazyInitializer.checkTargetState(AbstractLazyInitializer.java:235)
+	at org.hibernate.proxy.AbstractLazyInitializer.initialize(AbstractLazyInitializer.java:157)
+	at org.hibernate.proxy.AbstractLazyInitializer.getImplementation(AbstractLazyInitializer.java:259)
+	at org.hibernate.engine.internal.StatefulPersistenceContext.unproxyAndReassociate(StatefulPersistenceContext.java:636)
+	at org.hibernate.event.internal.DefaultDeleteEventListener.onDelete(DefaultDeleteEventListener.java:72)
+	at org.hibernate.event.internal.DefaultDeleteEventListener.onDelete(DefaultDeleteEventListener.java:56)
+	at org.hibernate.internal.SessionImpl.fireDelete(SessionImpl.java:993)
+	at org.hibernate.internal.SessionImpl.delete(SessionImpl.java:929)
+	at org.hibernate.internal.SessionImpl.remove(SessionImpl.java:3358)
+	at com.vojke.bookstore.dao.JpaDAO.delete(JpaDAO.java:60)
+	at com.vojke.bookstore.dao.BookDAO.delete(BookDAO.java:35)
+	at com.vojke.bookstore.dao.BookDAOTest.testDeleteBookFail(BookDAOTest.java:101)
+</failure>
+    <system-out>Hibernate: 
+    select
+        book0_.book_id as book_id1_0_0_,
+        book0_.author as author2_0_0_,
+        book0_.category_id as categor10_0_0_,
+        book0_.description as descript3_0_0_,
+        book0_.image as image4_0_0_,
+        book0_.isbn as isbn5_0_0_,
+        book0_.last_update_time as last_upd6_0_0_,
+        book0_.price as price7_0_0_,
+        book0_.published_date as publishe8_0_0_,
+        book0_.title as title9_0_0_,
+        category1_.category_id as category1_2_1_,
+        category1_.name as name2_2_1_,
+        reviews2_.book_id as book_id6_5_2_,
+        reviews2_.review_id as review_i1_5_2_,
+        reviews2_.review_id as review_i1_5_3_,
+        reviews2_.book_id as book_id6_5_3_,
+        reviews2_.comment as comment2_5_3_,
+        reviews2_.customer_id as customer7_5_3_,
+        reviews2_.headline as headline3_5_3_,
+        reviews2_.rating as rating4_5_3_,
+        reviews2_.review_time as review_t5_5_3_,
+        customer3_.customer_id as customer1_3_4_,
+        customer3_.address as address2_3_4_,
+        customer3_.city as city3_3_4_,
+        customer3_.country as country4_3_4_,
+        customer3_.email as email5_3_4_,
+        customer3_.fullname as fullname6_3_4_,
+        customer3_.password as password7_3_4_,
+        customer3_.phone_number as phone_nu8_3_4_,
+        customer3_.register_date as register9_3_4_,
+        customer3_.zipcode as zipcode10_3_4_ 
+    from
+        bookstoredb.book book0_ 
+    inner join
+        bookstoredb.category category1_ 
+            on book0_.category_id=category1_.category_id 
+    left outer join
+        bookstoredb.review reviews2_ 
+            on book0_.book_id=reviews2_.book_id 
+    left outer join
+        bookstoredb.customer customer3_ 
+            on reviews2_.customer_id=customer3_.customer_id 
+    where
+        book0_.book_id=?
+</system-out>
+    <system-err>Jun 29, 2020 7:51:18 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+INFO: HHH000204: Processing PersistenceUnitInfo [
+	name: BookStore
+	...]
+Jun 29, 2020 7:51:19 PM org.hibernate.Version logVersion
+INFO: HHH000412: Hibernate Core {5.2.12.Final}
+Jun 29, 2020 7:51:19 PM org.hibernate.cfg.Environment &lt;clinit&gt;
+INFO: HHH000206: hibernate.properties not found
+Jun 29, 2020 7:51:19 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+INFO: HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+Jun 29, 2020 7:51:23 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH010002: C3P0 using driver: com.mysql.jdbc.Driver at URL: jdbc:mysql://localhost:3306/bookstoredb
+Jun 29, 2020 7:51:23 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001001: Connection properties: {user=root, password=****}
+Jun 29, 2020 7:51:23 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001003: Autocommit mode: false
+Jun 29, 2020 7:51:23 PM com.mchange.v2.log.MLog 
+INFO: MLog clients using java 1.4+ standard logging.
+Jun 29, 2020 7:51:25 PM com.mchange.v2.c3p0.C3P0Registry 
+INFO: Initializing c3p0-0.9.5.2 [built 08-December-2015 22:06:04 -0800; debug? true; trace: 10]
+Jun 29, 2020 7:51:25 PM org.hibernate.c3p0.internal.C3P0ConnectionProvider configure
+INFO: HHH10001007: JDBC isolation level: &lt;unknown&gt;
+Jun 29, 2020 7:51:25 PM com.mchange.v2.c3p0.impl.AbstractPoolBackedDataSource 
+INFO: Initializing c3p0 pool... com.mchange.v2.c3p0.PoolBackedDataSource@7e917ab1 [ connectionPoolDataSource -&gt; com.mchange.v2.c3p0.WrapperConnectionPoolDataSource@96ac21c1 [ acquireIncrement -&gt; 3, acquireRetryAttempts -&gt; 30, acquireRetryDelay -&gt; 1000, autoCommitOnClose -&gt; false, automaticTestTable -&gt; null, breakAfterAcquireFailure -&gt; false, checkoutTimeout -&gt; 0, connectionCustomizerClassName -&gt; null, connectionTesterClassName -&gt; com.mchange.v2.c3p0.impl.DefaultConnectionTester, contextClassLoaderSource -&gt; caller, debugUnreturnedConnectionStackTraces -&gt; false, factoryClassLocation -&gt; null, forceIgnoreUnresolvedTransactions -&gt; false, forceSynchronousCheckins -&gt; false, identityToken -&gt; 1hge0wdabc1by71p8za1a|1fa268de, idleConnectionTestPeriod -&gt; 0, initialPoolSize -&gt; 5, maxAdministrativeTaskTime -&gt; 0, maxConnectionAge -&gt; 0, maxIdleTime -&gt; 28000, maxIdleTimeExcessConnections -&gt; 0, maxPoolSize -&gt; 10, maxStatements -&gt; 27000, maxStatementsPerConnection -&gt; 0, minPoolSize -&gt; 5, nestedDataSource -&gt; com.mchange.v2.c3p0.DriverManagerDataSource@add61314 [ description -&gt; null, driverClass -&gt; null, factoryClassLocation -&gt; null, forceUseNamedDriverClass -&gt; false, identityToken -&gt; 1hge0wdabc1by71p8za1a|2e4b8173, jdbcUrl -&gt; jdbc:mysql://localhost:3306/bookstoredb, properties -&gt; {user=******, password=******} ], preferredTestQuery -&gt; null, privilegeSpawnedThreads -&gt; false, propertyCycle -&gt; 0, statementCacheNumDeferredCloseThreads -&gt; 0, testConnectionOnCheckin -&gt; false, testConnectionOnCheckout -&gt; false, unreturnedConnectionTimeout -&gt; 0, usesTraditionalReflectiveProxies -&gt; false; userOverrides: {} ], dataSourceName -&gt; null, extensions -&gt; {}, factoryClassLocation -&gt; null, identityToken -&gt; 1hge0wdabc1by71p8za1a|2a798d51, numHelperThreads -&gt; 3 ]
+Mon Jun 29 19:51:26 CEST 2020 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jun 29 19:51:26 CEST 2020 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jun 29 19:51:26 CEST 2020 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jun 29 19:51:30 CEST 2020 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Mon Jun 29 19:51:30 CEST 2020 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+Jun 29, 2020 7:51:30 PM org.hibernate.dialect.Dialect &lt;init&gt;
+INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+Jun 29, 2020 7:51:33 PM org.hibernate.hql.internal.QueryTranslatorFactoryInitiator initiateService
+INFO: HHH000397: Using ASTQueryTranslatorFactory
+</system-err>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testDeleteBookSuccess" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.delete(JpaDAO.java:56)
+	at com.vojke.bookstore.dao.BookDAO.delete(BookDAO.java:35)
+	at com.vojke.bookstore.dao.BookDAOTest.testDeleteBookSuccess(BookDAOTest.java:106)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testFindByTitleNotExist" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.findByTitle(BookDAO.java:43)
+	at com.vojke.bookstore.dao.BookDAOTest.testFindByTitleNotExist(BookDAOTest.java:130)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testFindByTitleExist" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.findByTitle(BookDAO.java:43)
+	at com.vojke.bookstore.dao.BookDAOTest.testFindByTitleExist(BookDAOTest.java:137)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testGetBookSuccess" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.find(JpaDAO.java:46)
+	at com.vojke.bookstore.dao.BookDAO.get(BookDAO.java:30)
+	at com.vojke.bookstore.dao.BookDAOTest.testGetBookSuccess(BookDAOTest.java:119)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testCreateSecoundBook" time="0.312">
+    <failure message="D:\books\Java 8 in Action.jpg" type="java.nio.file.NoSuchFileException">java.nio.file.NoSuchFileException: D:\books\Java 8 in Action.jpg
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.readAllBytes(Unknown Source)
+	at com.vojke.bookstore.dao.BookDAOTest.testCreateSecoundBook(BookDAOTest.java:66)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testSearchBookByTitle" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.search(BookDAO.java:57)
+	at com.vojke.bookstore.dao.BookDAOTest.testSearchBookByTitle(BookDAOTest.java:162)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testListBestSelilingBooks" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQuery(JpaDAO.java:99)
+	at com.vojke.bookstore.dao.BookDAO.listBestSelilingBooks(BookDAO.java:70)
+	at com.vojke.bookstore.dao.BookDAOTest.testListBestSelilingBooks(BookDAOTest.java:195)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testListByCategory" time="0.004">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.listBycategory(BookDAO.java:50)
+	at com.vojke.bookstore.dao.BookDAOTest.testListByCategory(BookDAOTest.java:150)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testSearchBookByAuthor" time="0.001">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.search(BookDAO.java:57)
+	at com.vojke.bookstore.dao.BookDAOTest.testSearchBookByAuthor(BookDAOTest.java:169)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testSearchBookByDescription" time="0.001">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryAndParamater(JpaDAO.java:80)
+	at com.vojke.bookstore.dao.BookDAO.search(BookDAO.java:57)
+	at com.vojke.bookstore.dao.BookDAOTest.testSearchBookByDescription(BookDAOTest.java:179)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testCountByCategory" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.countWithNamedQuery(JpaDAO.java:119)
+	at com.vojke.bookstore.dao.BookDAO.countByCategory(BookDAO.java:66)
+	at com.vojke.bookstore.dao.BookDAOTest.testCountByCategory(BookDAOTest.java:189)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testListMostFavoredBooks" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQueryObjects(JpaDAO.java:108)
+	at com.vojke.bookstore.dao.BookDAO.listMostFavoredBooks(BookDAO.java:75)
+	at com.vojke.bookstore.dao.BookDAOTest.testListMostFavoredBooks(BookDAOTest.java:203)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testCreateBook" time="0.001">
+    <failure message="D:\books\Effective Java.jpg" type="java.nio.file.NoSuchFileException">java.nio.file.NoSuchFileException: D:\books\Effective Java.jpg
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.readAllBytes(Unknown Source)
+	at com.vojke.bookstore.dao.BookDAOTest.testCreateBook(BookDAOTest.java:45)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testListAll" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQuery(JpaDAO.java:66)
+	at com.vojke.bookstore.dao.BookDAO.listAll(BookDAO.java:40)
+	at com.vojke.bookstore.dao.BookDAOTest.testListAll(BookDAOTest.java:124)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testUpdateBook" time="0.003">
+    <failure message="D:\books\Effective Java.jpg" type="java.nio.file.NoSuchFileException">java.nio.file.NoSuchFileException: D:\books\Effective Java.jpg
+	at sun.nio.fs.WindowsException.translateToIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsException.rethrowAsIOException(Unknown Source)
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.newByteChannel(Unknown Source)
+	at java.nio.file.Files.readAllBytes(Unknown Source)
+	at com.vojke.bookstore.dao.BookDAOTest.testUpdateBook(BookDAOTest.java:89)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testListNewBooks" time="0.001">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.findWithNamedQuery(JpaDAO.java:99)
+	at com.vojke.bookstore.dao.BookDAO.listnewBooks(BookDAO.java:54)
+	at com.vojke.bookstore.dao.BookDAOTest.testListNewBooks(BookDAOTest.java:155)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testCount" time="0.001">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.countWithNamedQuery(JpaDAO.java:73)
+	at com.vojke.bookstore.dao.BookDAO.count(BookDAO.java:63)
+	at com.vojke.bookstore.dao.BookDAOTest.testCount(BookDAOTest.java:143)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.BookDAOTest" name="com.vojke.bookstore.dao.BookDAOTest.testGetBookFail" time="0">
+    <failure message="EntityManagerFactory is closed" type="java.lang.IllegalStateException">java.lang.IllegalStateException: EntityManagerFactory is closed
+	at org.hibernate.internal.SessionFactoryImpl.validateNotClosed(SessionFactoryImpl.java:499)
+	at org.hibernate.internal.SessionFactoryImpl.buildEntityManager(SessionFactoryImpl.java:574)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:570)
+	at org.hibernate.internal.SessionFactoryImpl.createEntityManager(SessionFactoryImpl.java:156)
+	at com.vojke.bookstore.dao.JpaDAO.find(JpaDAO.java:46)
+	at com.vojke.bookstore.dao.BookDAO.get(BookDAO.java:30)
+	at com.vojke.bookstore.dao.BookDAOTest.testGetBookFail(BookDAOTest.java:112)
+</failure>
+  </testcase>
+</testsuite>

@@ -1,0 +1,42 @@
+-------------------------------------------------------------------------------
+Test set: com.vojke.bookstore.entity.BookRatingTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0.009 sec <<< FAILURE!
+com.vojke.bookstore.entity.BookRatingTest.testAverageRating()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.entity.BookRatingTest.testAverageRating(BookRatingTest.java:23)
+Caused by: java.lang.ClassNotFoundException: org.junit.Assert
+	at java.net.URLClassLoader.findClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 19 more
+
+com.vojke.bookstore.entity.BookRatingTest.testAverageRating2()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.entity.BookRatingTest.testAverageRating2(BookRatingTest.java:32)
+
+com.vojke.bookstore.entity.BookRatingTest.testRatingString4()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.entity.BookRatingTest.testRatingString4(BookRatingTest.java:94)
+
+com.vojke.bookstore.entity.BookRatingTest.testRatingString5()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.entity.BookRatingTest.testRatingString5(BookRatingTest.java:105)
+
+com.vojke.bookstore.entity.BookRatingTest.testAverageRating3()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.entity.BookRatingTest.testAverageRating3(BookRatingTest.java:51)
+
+com.vojke.bookstore.entity.BookRatingTest.testRatingString1()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.entity.BookRatingTest.testRatingString1(BookRatingTest.java:61)
+
+com.vojke.bookstore.entity.BookRatingTest.testRatingString2()  Time elapsed: 0.006 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.entity.BookRatingTest.testRatingString2(BookRatingTest.java:72)
+
+com.vojke.bookstore.entity.BookRatingTest.testRatingString3()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NoClassDefFoundError: org/junit/Assert
+	at com.vojke.bookstore.entity.BookRatingTest.testRatingString3(BookRatingTest.java:83)
+

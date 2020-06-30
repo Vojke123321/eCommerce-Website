@@ -1,0 +1,36 @@
+-------------------------------------------------------------------------------
+Test set: com.vojke.bookstore.dao.CustomerDAOTest
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 8, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE!
+com.vojke.bookstore.dao.CustomerDAOTest.testGetCustomer()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testGetCustomer(CustomerDAOTest.java:44)
+
+com.vojke.bookstore.dao.CustomerDAOTest.testFindByEmailSuccess()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testFindByEmailSuccess(CustomerDAOTest.java:79)
+
+com.vojke.bookstore.dao.CustomerDAOTest.testCheckLoginFail()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testCheckLoginFail(CustomerDAOTest.java:94)
+
+com.vojke.bookstore.dao.CustomerDAOTest.testCountCustomers()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testCountCustomers(CustomerDAOTest.java:73)
+
+com.vojke.bookstore.dao.CustomerDAOTest.testCheckLoginSuccess()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testCheckLoginSuccess(CustomerDAOTest.java:87)
+
+com.vojke.bookstore.dao.CustomerDAOTest.testDeleteCustomer()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testDeleteCustomer(CustomerDAOTest.java:59)
+
+com.vojke.bookstore.dao.CustomerDAOTest.testCreateCustomer()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testCreateCustomer(CustomerDAOTest.java:36)
+
+com.vojke.bookstore.dao.CustomerDAOTest.testListAllCustomers()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testListAllCustomers(CustomerDAOTest.java:65)
+

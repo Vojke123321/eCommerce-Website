@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite tests="8" failures="8" name="com.vojke.bookstore.dao.CustomerDAOTest" time="0" errors="0" skipped="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jre1.8.0_231\bin"/>
+    <property name="java.vm.version" value="25.231-b11"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="maven.multiModuleProjectDirectory" value="D:\ecplise_file\BookStore2"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="path.separator" value=";"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="D:\ecplise_file\BookStore2"/>
+    <property name="java.runtime.version" value="1.8.0_231-b11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="java.endorsed.dirs" value="C:\Program Files\Java\jre1.8.0_231\lib\endorsed"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\pc\AppData\Local\Temp\"/>
+    <property name="line.separator" value="
+"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="D:\ecplise_file\.metadata\.plugins\org.eclipse.m2e.launching\launches\m2conf8747796539600274668.tmp"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jre1.8.0_231\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:/Program Files/Java/jre1.8.0_231/bin/server;C:/Program Files/Java/jre1.8.0_231/bin;C:/Program Files/Java/jre1.8.0_231/lib/amd64;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Java\jdk1.8.0_201\bin;C:\Program Files (x86)\Java\jre1.8.0_201\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\wildfly-19.0.0.Final\bin;C:\Program Files\nodejs\;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\pc\AppData\Local\Microsoft\WindowsApps;D:\CHROME DOWN\apache-maven-3.6.3\bin;C:\Users\pc\AppData\Roaming\npm;C:\Users\pc\Desktop;;."/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.class.version" value="52.0"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\pc"/>
+    <property name="user.timezone" value="Europe/Prague"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="java.specification.version" value="1.8"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="user.name" value="pc"/>
+    <property name="java.class.path" value="C:\Users\pc\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_1.15.0.20200310-1832\jars\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="1.8"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.home" value="C:\Program Files\Java\jre1.8.0_231"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher -B package"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language" value="en"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="1.8.0_231"/>
+    <property name="java.ext.dirs" value="C:\Program Files\Java\jre1.8.0_231\lib\ext;C:\WINDOWS\Sun\Java\lib\ext"/>
+    <property name="sun.boot.class.path" value="C:\Program Files\Java\jre1.8.0_231\lib\resources.jar;C:\Program Files\Java\jre1.8.0_231\lib\rt.jar;C:\Program Files\Java\jre1.8.0_231\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_231\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_231\lib\jce.jar;C:\Program Files\Java\jre1.8.0_231\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_231\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_231\classes"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="maven.home" value="D:\ecplise_file\BookStore2\EMBEDDED"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase classname="com.vojke.bookstore.dao.CustomerDAOTest" name="com.vojke.bookstore.dao.CustomerDAOTest.testGetCustomer" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testGetCustomer(CustomerDAOTest.java:44)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.CustomerDAOTest" name="com.vojke.bookstore.dao.CustomerDAOTest.testFindByEmailSuccess" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testFindByEmailSuccess(CustomerDAOTest.java:79)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.CustomerDAOTest" name="com.vojke.bookstore.dao.CustomerDAOTest.testCheckLoginFail" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testCheckLoginFail(CustomerDAOTest.java:94)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.CustomerDAOTest" name="com.vojke.bookstore.dao.CustomerDAOTest.testCountCustomers" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testCountCustomers(CustomerDAOTest.java:73)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.CustomerDAOTest" name="com.vojke.bookstore.dao.CustomerDAOTest.testCheckLoginSuccess" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testCheckLoginSuccess(CustomerDAOTest.java:87)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.CustomerDAOTest" name="com.vojke.bookstore.dao.CustomerDAOTest.testDeleteCustomer" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testDeleteCustomer(CustomerDAOTest.java:59)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.CustomerDAOTest" name="com.vojke.bookstore.dao.CustomerDAOTest.testCreateCustomer" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testCreateCustomer(CustomerDAOTest.java:36)
+</failure>
+  </testcase>
+  <testcase classname="com.vojke.bookstore.dao.CustomerDAOTest" name="com.vojke.bookstore.dao.CustomerDAOTest.testListAllCustomers" time="0">
+    <failure type="java.lang.NullPointerException">java.lang.NullPointerException
+	at com.vojke.bookstore.dao.CustomerDAOTest.testListAllCustomers(CustomerDAOTest.java:65)
+</failure>
+  </testcase>
+</testsuite>
